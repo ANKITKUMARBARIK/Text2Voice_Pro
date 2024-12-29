@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0d1117, #161b22);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: -50px;
+    margin-bottom: 30px;
+    color: #c9d1d9;
+}
+
+.hero span {
+    color: #39ff14;
+}
+
+textarea {
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+    background: #161b22;
+    color: #c9d1d9;
+    font-size: 15px;
+    outline: 0;
+    border: 1px solid #39ff14;
+    padding: 20px;
+    border-radius: 10px;
+    resize: none;
+    margin-bottom: 20px;
+}
+
+textarea::placeholder {
+    font-size: 16px;
+    color: #8b949e;
+}
+
+.row {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+button {
+    background: #161b22;
+    color: #39ff14;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 35px;
+    border: 1px solid #39ff14;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #39ff14;
+    color: #161b22;
+    transform: scale(1.05);
+}
+
+button img {
+    width: 16px;
+    margin-right: 10px;
+}
+
+select {
+    color: #ffffff;
+    background: #1f1f1f;
+    height: 55px;
+    padding: 0 20px;
+    border: 2px solid #39ff14;
+    border-radius: 35px;
+    appearance: none;
+    background-image: url('dropdown-icon.svg');
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: right 20px center;
+    font-size: 16px;
+    box-shadow: 0px 4px 10px rgba(0, 255, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+select:focus {
+    border-color: #39ff14;
+    background: #101010;
+    box-shadow: 0px 4px 15px rgba(57, 255, 20, 0.6);
+}
+
+select option {
+    background: #1f1f1f;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    select {
+        height: 60px;
+        font-size: 18px;
+        padding: 0 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    textarea {
+        height: 180px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    select {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    textarea {
+        height: 150px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
